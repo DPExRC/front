@@ -1,0 +1,116 @@
+/* Contenedor principal para las secciones */
+.home-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sección de fondo */
+.home-section {
+    width: 100%; /* Ancho completo */
+    height: 485px; /* Altura fija de 485 píxeles */
+    position: relative; /* Para permitir el uso de la superposición */
+    overflow: hidden; /* Ocultar contenido que se desborde */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el espacio */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+}
+
+
+
+/* Estilo de la superposición */
+.overlay {
+    position: absolute; /* Superposición sobre la imagen */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Estilo del contenido dentro de la sección */
+.content {
+    position: relative; /* Para mantener el contenido visible sobre la superposición */
+    z-index: 1; /* Asegura que el contenido esté por encima de la superposición */
+}
+
+.navbar {
+    position: relative; /* Asegúrate de que el navbar tenga una posición relativa o absoluta */
+    z-index: 10; /* Asegúrate de que tenga un z-index mayor que el del slider */
+}
+
+.large-section {
+    height: 0px; /* Ajusta la altura como desees */
+    /* Puedes agregar otras propiedades si lo deseas, como padding o margin */
+}
+.split-section {
+    display: flex;
+    width: 100%;
+    margin: 10px 0;
+}
+
+
+
+/* Estilos de los contenidos izquierdo y derecho */
+.left-content, .right-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+
+/*nuevo*/
+
+/*divide el section en 2*/
+.section-pair {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-section {
+    flex: 1 1 50%; /* Ocupa la mitad del contenedor */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.home-section .content {
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 1060px) {
+    .home-section {
+        flex: 1 1 100%; /* Ocupa todo el ancho */
+    }
+    .split-section {
+        flex-direction: column;
+    }
+    .left-content, .right-content {
+        width: 100%;
+    }
+}

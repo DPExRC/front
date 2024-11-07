@@ -1,0 +1,51 @@
+/* Slider.css */
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%; /* Centra el botón verticalmente */
+    transform: translateY(-50%);
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.prev-button {
+    left: 15px; /* Ajusta el espacio desde el borde izquierdo */
+}
+
+.next-button {
+    right: 15px; /* Ajusta el espacio desde el borde derecho */
+}
+
+.slider-button svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: transform 0.3s;
+}
+
+.slider-button:hover svg {
+    transform: scale(1.1); /* Efecto de agrandamiento al pasar el mouse */
+}

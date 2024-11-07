@@ -1,0 +1,56 @@
+/* productos.css */
+
+/* Contenedor principal */
+.productos-container {
+  max-width: 1200px;
+  margin: 100px auto 20px; /* Espacio superior para evitar que el contenido quede debajo del navbar */
+  padding: 20px;
+}
+
+/* Imagen en la parte superior */
+.productos-image {
+  width: 100vw; /* Ocupar todo el ancho del viewport */
+  height: 500px; /* Ajusta la altura según sea necesario */
+  background-size: cover; /* La imagen cubrirá todo el área disponible */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/* Título en la parte superior */
+.productos-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin: 30px 0; /* Separación del título respecto a la imagen */
+}
+
+.productos-subtitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin: -20px 0; 
+}
+
+/* Contenedor de columnas de texto */
+.productos-text {
+  width: 80%; /* Ajusta el ancho según necesites */
+  margin: 50px auto; /* Centra el contenedor de texto */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Estilo para títulos de cada columna */
+.productos-text h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* Estilo para el texto de cada columna */
+.productos-text p {
+  font-size: 1rem;
+  color: #fff;
+}
