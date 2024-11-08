@@ -30,7 +30,7 @@ Este proyecto utiliza Tailwind CSS como framework de diseño. Las clases de Tail
 ## Estructura del Proyecto
 
 ```plaintext
-front/
+
 ├── public/             # Archivos públicos (index.html, iconos, etc.)
 ├── src/                # Código fuente de la aplicación
 │   ├── assets/         # Componentes multimedia
