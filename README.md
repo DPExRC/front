@@ -27,9 +27,13 @@ Este proyecto utiliza Tailwind CSS como framework de diseño. Las clases de Tail
 - **Node.js** y **npm** para el desarrollo local.
 - **Docker** (opcional) para ejecutar la aplicación en contenedores.
 
+## Estructura del Proyecto
+
+```plaintext
 front/
 ├── public/             # Archivos públicos (index.html, iconos, etc.)
 ├── src/                # Código fuente de la aplicación
+│   ├── assets/         # Componentes multimedia
 │   ├── components/     # Componentes reutilizables de la UI
 │   ├── pages/          # Páginas principales de la aplicación y archivos CSS 
 │   ├── App.jsx         # Componente principal de la aplicación
@@ -38,6 +42,7 @@ front/
 ├── package.json        # Dependencias y scripts del proyecto
 ├── tailwind.config.js  # Configuración de los estilos CSS
 └── README.md           # Descripción del proyecto
+
 
 
 ## Instalación
