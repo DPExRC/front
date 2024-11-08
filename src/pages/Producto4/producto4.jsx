@@ -1,8 +1,8 @@
 import React from 'react';
-import './item4.css';
+import './producto4.css';
 import images from "../../assets/home/index"; // Importar las imágenes desde el archivo correspondiente
 
-const Item4 = () => {
+const Producto4 = () => {
     return (
         <div className="productos-container flex flex-col items-center p-6">
             {/* Imagen en la parte superior con fondo */}
@@ -43,4 +43,4 @@ const Item4 = () => {
     );
 };
 
-export default Item4;
+export default Producto4;

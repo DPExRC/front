@@ -4,10 +4,10 @@ import { FaInstagram, FaGithub, FaEnvelope, FaLinkedin} from 'react-icons/fa';
 
 const ItemsContainer = () => {
   return (
-    <div className="footer-list flex justify-center space-x-4 mb-4">
-      <div className="m-2 p-2 bg-gray-800 text-white rounded-lg">Item 1</div>
-      <div className="m-2 p-2 bg-gray-800 text-white rounded-lg">Item 2</div>
-      <div className="m-2 p-2 bg-gray-800 text-white rounded-lg">Item 3</div>
+    <div className="footer-list flex justify-center space-x-1 mb-4">
+      <div className="m-2 p-2 bg-gray-800 text-white rounded-lg"> texto1</div>
+      <div className="m-2 p-2 bg-gray-800 text-white rounded-lg"> texto2</div>
+      <div className="m-2 p-2 bg-gray-800 text-white rounded-lg"> texto3</div>
     </div>
   );
 };
@@ -49,8 +49,8 @@ const Footer = () => {
       <ItemsContainer />
       
       <div className="footer-bottom flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm pb-4 pt-4">
-        <span>© 2020 David Raimilla. All rights reserved.</span>
-        <span>Terms · Privacy Policy</span>
+        <span>© 2020 David Raimilla.     Todos los derechos reservados.</span>
+        <span>       Terminos · Privacidad · Política</span>
         <SocialIcons icons={icons} />
       </div>
     </footer>

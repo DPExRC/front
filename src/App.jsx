@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Home, Productos, Pedidos, Proveedores, Item4 } from "./pages";
+import { Home, Productos, Pedidos, Proveedores, Producto4 } from "./pages";
 import Footer from "../src/components/Footer/Footer"; // Asegúrate de que la ruta sea correcta
 import Navbar from './components/Navbar/Navbar'; 
 
@@ -16,7 +16,7 @@ function App() {
                         <Route path="/productos" element={<Productos />} />
                         <Route path="/pedidos" element={<Pedidos />} />
                         <Route path='/proveedores' element={<Proveedores/>}/>
-                        <Route path='/item4' element={<Item4/>}/>
+                        <Route path='/producto4' element={<Producto4/>}/>
 
                     </Routes>
                 </main>

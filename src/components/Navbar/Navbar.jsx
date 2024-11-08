@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/navbar/logo.png";
 
@@ -7,20 +7,35 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = {
-
     item1: "Productos",
     item2: "Pedidos",
     item3: "Proveedores",
-    item4: "Item4",
-
+    item4: "Producto4",
     /*item n: "ITEM N ", */
-
   };
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
     setIsHovered(!isHovered || isMenuOpen);
   };
+
+  // useEffect para cerrar el menú al hacer clic fuera
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      // Si el clic no está en el navbar o en el menú, cierra el menú
+      if (!event.target.closest("header")) {
+        setIsMenuOpen(false);
+        setIsHovered(false);
+      }
+    };
+
+    // Agregar el event listener para cerrar el menú en clics fuera
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      // Limpiar el event listener al desmontar el componente
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <header
@@ -37,11 +52,11 @@ function Navbar() {
         style={{ height: '100%' }}
       >
         {/* Logo a la izquierda */}
-        <a href="/" className="absolute left-8" style={{ marginTop: '10px' }}>
+        <a href="/" className="absolute left-8" style={{ marginTop: '2px' }}>
           <img
             src={logo}
             alt="Logo"
-            style={{ width: '100px', height: '100px' }}
+            style={{ width: '60px', height: '60px' }}
             className="hover:scale-105 transition-all"
           />
         </a>
@@ -52,7 +67,6 @@ function Navbar() {
             <li key={index}>
               <Link
                 to={`/${item.toLowerCase()}`}
-                /*cambiar color del seleccionador de items --gray-- */
                 className="p-3 hover:bg-gray-600 hover:text-white rounded-md transition-all cursor-pointer"
               >
                 {item}
