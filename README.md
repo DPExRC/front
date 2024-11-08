@@ -43,7 +43,7 @@ Este proyecto utiliza Tailwind CSS como framework de diseño. Las clases de Tail
 ├── tailwind.config.js  # Configuración de los estilos CSS
 └── README.md           # Descripción del proyecto
 
-
+```
 
 ## Instalación
 
