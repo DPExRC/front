@@ -51,7 +51,6 @@ Este proyecto utiliza Tailwind CSS como framework de diseño. Las clases de Tail
 
    ```bash
    git clone https://github.com/DPExRC/front.git
-   cd front
    
 ## Contribuciones
 
