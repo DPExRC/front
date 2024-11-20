@@ -1,11 +1,11 @@
 
-import imagen1 from "./imagen1.png";
-import imagen2 from "./imagen2.png";
-import imagen3 from "./imagen3.png";
-import imagen4 from "./imagen4.png";
-import imagen5 from "./imagen5.png";
-import imagen6 from "./imagen6.png";
-import imagen7 from "./imagen7.png";
+import imagen1 from "./imagen1.webp";
+import imagen2 from "./imagen2.webp";
+import imagen3 from "./imagen3.webp";
+import imagen4 from "./imagen4.webp";
+import imagen5 from "./imagen5.webp";
+import imagen6 from "./imagen6.webp";
+import imagen7 from "./imagen7.webp";
 
 export default {
   imagen1,
